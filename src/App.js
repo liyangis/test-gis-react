@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import Map from './components/Map';
+import MapLegend from './components/MapLegend';
 import './App.css';
 
 class App extends Component {
@@ -7,12 +9,10 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <img src="./images/jkyc_logo.png" className="App-logo" alt="logo" />
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Map></Map>
+        <MapLegend/>
       </div>
     );
   }
